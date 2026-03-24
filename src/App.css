@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+/* ============================================================
+   FOCUS INTERNATIONAL FOUNDATION — Design System
+   Palette: Olive Green + Cream White + Warm Gold
+   ============================================================ */
+
+:root {
+  --primary:        #2D5A3D;   /* Deep olive green — buttons, headings */
+  --primary-light:  #4A7C59;   /* Medium olive — hover states */
+  --primary-pale:   #3d6b4e;   /* Slightly lighter olive for accents */
+  --primary-bg:     #E8F2EC;   /* Very pale olive — section tint */
+  --gold:           #C9A84C;   /* Warm gold — highlights, splits */
+  --gold-pale:      #F5E9C8;   /* Light gold — tag backgrounds */
+  --cream:          #FDF8F0;   /* Page background */
+  --cream-dark:     #F5EDD8;   /* Alternating section background */
+  --cream-mid:      #EDE4CE;   /* Borders, dividers */
+  --text-dark:      #1E2D24;   /* Primary text */
+  --text-mid:       #4B5E53;   /* Secondary text */
+  --text-light:     #7A8F81;   /* Muted text */
+  --forest:         #1E3D2F;   /* Deepest green — footer, dark cards */
+  --white:          #FFFFFF;
+}
+
+/* ── Base ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background-color: var(--cream);
+  color: var(--text-dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Animated Gradient Text (olive → gold) ── */
+.funky-text {
+  background: linear-gradient(90deg, #2D5A3D, #C9A84C, #4A7C59, #C9A84C);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  background-size: 300% 300%;
+  animation: funkyMove 5s linear infinite;
+}
+
+@keyframes funkyMove {
+  0%   { background-position: 0%   50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* ── BG Glow Animation ── */
+@keyframes bgGlow {
+  0%   { background-position: 0%   50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0%   50%; }
+}
+
+.animate-bgGlow {
+  background-size: 200% 200%;
+  animation: bgGlow 8s ease-in-out infinite;
+}
+
+/* ── Image hover zoom ── */
+section img { transition: transform .35s ease; }
+section img:hover { transform: scale(1.02); }
+
+/* ── Heading aria-hidden ── */
+h2[aria-hidden="true"] { font-weight: 700; }
+
+/* ── Fade-Slide (Hero carousel) ── */
+@keyframes fadeSlide {
+  0%   { opacity: 0; transform: scale(1);    }
+  10%  { opacity: 1; transform: scale(1.02); }
+  33%  { opacity: 1; transform: scale(1.04); }
+  43%  { opacity: 0; transform: scale(1.05); }
+  100% { opacity: 0; transform: scale(1.05); }
+}
+
+/* ── Prose (Blog) ── */
+.prose { max-width: none; }
+
+.prose h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.prose h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-light);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose p {
+  margin-bottom: 1.25rem;
+  line-height: 1.8;
+  color: var(--text-mid);
+}
+
+.prose ul {
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+  color: var(--text-mid);
+}
+
+.prose strong {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.prose a {
+  color: var(--primary-light);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.prose a:hover {
+  color: var(--primary);
+}

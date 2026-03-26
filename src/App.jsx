@@ -19,6 +19,7 @@ import Privacy from "./pages/Privacy";
 import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
 import Gallery from "./pages/Gallery";
+import Testimonials from "./pages/Testimonials";
 
 const ScrollToTop = () => {
   const location = useLocation();
@@ -43,6 +44,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/donate" element={<Donate />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/testimonials" element={<Testimonials />} />
       </Routes>
     </BrowserRouter>
   );

@@ -9,6 +9,7 @@ const navLinks = [
   { name: "Focus Solutions", href: "/focus-solutions" },
   { name: "Trustees", href: "/board-of-trustees" },
   { name: "Gallery", href: "/gallery" },
+  { name: "Testimonials", href: "/testimonials" },
   { name: "Contact", href: "/contact" },
 ];
 

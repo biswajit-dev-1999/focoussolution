@@ -7,6 +7,7 @@ const quickLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
   { name: "Programs", href: "/board-of-trustees" },
+  { name: "Testimonials", href: "/testimonials" },
   { name: "Donate", href: "/donate" },
 ];
 

@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Star, Quote, ChevronLeft, ChevronRight, Heart, Award, Users } from "lucide-react";
+import StoriesOfChange from "../components/StoriesOfChange";
 
 // ─── SplitText (matches other page typography) ────────────────────────────────
 const SplitText = ({ text, delayStep = 0.03, className = "", style = {} }) => {
@@ -429,8 +430,15 @@ const TestimonialsSection = () => {
         </div>
       </div>
 
+      {/* ── Stories of Change ── */}
+      <div className="w-full relative z-20 bg-white py-16 mb-20 shadow-sm shadow-[#2D5A3D]/5 border-y border-[#EDE4CE] mt-4">
+        <div className="max-w-7xl mx-auto">
+          <StoriesOfChange />
+        </div>
+      </div>
+
       {/* ── CTA ── */}
-      <div className="pb-24 px-6">
+      <div className="pb-24 px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, scale: 0.97 }}
           whileInView={{ opacity: 1, scale: 1 }}

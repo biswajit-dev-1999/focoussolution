@@ -104,7 +104,7 @@ const STATS = [
 const Impact = () => (
   <section
     className="relative w-full overflow-hidden"
-    style={{ background: "linear-gradient(135deg, #0D2018 0%, #142E20 50%, #0A1810 100%)" }}
+    style={{ background: "linear-gradient(135deg, #0D2017 0%, #142E20 50%, #0A1810 100%)" }}
   >
     {/* Grain texture overlay */}
     <div

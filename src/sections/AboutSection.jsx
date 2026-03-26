@@ -1,17 +1,6 @@
 import React, { useMemo } from "react";
 import { motion } from "framer-motion";
-import {
-  BookOpenCheck,
-  Utensils,
-  HeartHandshake,
-  Stethoscope,
-  UsersRound,
-  Leaf,
-  Heart,
-  Scale,
-  Zap,
-  Globe,
-} from "lucide-react";
+import { Heart, Scale, Zap, Globe, Quote } from "lucide-react";
 
 // Split text letter-by-letter
 const SplitText = ({ text, delayStep = 0.03, className = "", style = {} }) => {
@@ -79,14 +68,7 @@ const AboutSection = () => {
     { Icon: Globe, label: "Unity", desc: "We unite communities across differences to build shared futures.", bg: "#FDF5E0" },
   ];
 
-  const programs = [
-    { Icon: BookOpenCheck, title: "Education Support", desc: "Providing books, school kits, and classroom support to underprivileged children.", img: "/7.png", bg: "#E8F2EC" },
-    { Icon: Utensils, title: "Healthy Meals", desc: "Ensuring children and families receive nutritious meals every week.", img: "/8.png", bg: "#FDF5E0" },
-    { Icon: Stethoscope, title: "Medical Camps", desc: "Offering free health checkups, medicines, and awareness drives.", img: "/9.png", bg: "#E8F2EC" },
-    { Icon: HeartHandshake, title: "Women Empowerment", desc: "Skill development, financial literacy and leadership programs for women.", img: "/women.jpg", bg: "#FDF5E0" },
-    { Icon: UsersRound, title: "Community Development", desc: "Building stronger communities with local leadership and resilience.", img: "/10.png", bg: "#E8F2EC" },
-    { Icon: Leaf, title: "Environmental Conservation", desc: "Protecting natural resources and promoting sustainable practices.", img: "/101.jpg", bg: "#FDF5E0" },
-  ];
+
 
   return (
     <section
@@ -178,7 +160,7 @@ const AboutSection = () => {
               <div className="w-full h-full rounded-full flex flex-col items-center justify-center text-center leading-tight border border-white/40"
                 style={{ color: "#FFFFFF" }}>
                 <span className="text-sm font-semibold tracking-wider uppercase mb-1 opacity-90">Estd.</span>
-                <span className="text-3xl font-extrabold tracking-tight">2018</span>
+                <span className="text-3xl font-extrabold tracking-tight">2017</span>
               </div>
             </motion.div>
           </motion.div>
@@ -271,7 +253,7 @@ const AboutSection = () => {
             <ul className="space-y-3 text-sm" style={{ color: "#4B5E53" }}>
               <li className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5" style={{ background: "#2D5A3D" }} />
-                Registered as Trust UNDER INDIA TRUST ACT OF 1882. (Dated 16th March 2018)
+                Registered as Trust UNDER INDIA TRUST ACT OF 1882. (Dated 16th March 2017)
               </li>
               <li className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5" style={{ background: "#2D5A3D" }} />
@@ -328,33 +310,36 @@ const AboutSection = () => {
           ))}
         </div>
 
-        {/* ═══════════════ TOUCHING LIVES THROUGH ACTION ═══════════════ */}
-        <SectionHeading
-          text="Touching Lives Through Action"
-          sub="Real programs, real people, real change."
-        />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-28">
-          {programs.map((p, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: idx * 0.08 }}
-              viewport={{ once: true }}
-              className="rounded-3xl overflow-hidden shadow-xl"
-              style={{ background: "#FFFFFF", border: "1px solid #EDE4CE" }}
-            >
-              <img src={p.img} className="w-full h-48 object-cover" alt={p.title} />
-              <div className="p-6">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3"
-                  style={{ background: p.bg, color: "#2D5A3D" }}>
-                  <p.Icon size={22} strokeWidth={1.5} />
-                </div>
-                <h4 className="text-lg font-bold mb-2" style={{ color: "#2D5A3D" }}>{p.title}</h4>
-                <p className="text-sm leading-relaxed" style={{ color: "#4B5E53" }}>{p.desc}</p>
+        {/* ═══════════════ OFFICIAL APPEAL ═══════════════ */}
+        <div className="mb-28">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.98 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="relative bg-white rounded-[3rem] p-10 md:p-16 lg:p-20 shadow-2xl border border-[#EDE4CE] overflow-hidden text-center"
+          >
+            <div className="absolute top-6 left-6 w-12 h-12 border-t-2 border-l-2 rounded-tl-xl" style={{ borderColor: "#C9A84C", opacity: 0.5 }} />
+            <div className="absolute top-6 right-6 w-12 h-12 border-t-2 border-r-2 rounded-tr-xl" style={{ borderColor: "#C9A84C", opacity: 0.5 }} />
+            <div className="absolute bottom-6 left-6 w-12 h-12 border-b-2 border-l-2 rounded-bl-xl" style={{ borderColor: "#C9A84C", opacity: 0.5 }} />
+            <div className="absolute bottom-6 right-6 w-12 h-12 border-b-2 border-r-2 rounded-br-xl" style={{ borderColor: "#C9A84C", opacity: 0.5 }} />
+            <Quote className="absolute top-10 left-1/2 -translate-x-1/2 w-28 h-28 opacity-5 z-0" style={{ color: "#2D5A3D" }} />
+            <div className="relative z-10 max-w-3xl mx-auto">
+              <h3 className="text-xs font-bold tracking-[0.25em] uppercase mb-8" style={{ color: "#C9A84C" }}>An Official Appeal</h3>
+              <p className="text-2xl md:text-3xl font-medium leading-relaxed mb-8 italic" style={{ color: "#2D5A3D" }}>
+                "On behalf of FOCUS SOLUTIONS, may I draw your kind attention to be partnering with more opportunities, aiming to provide more services to build a healthy community and celebrate the{" "}
+                <span className="font-bold border-b-2" style={{ color: "#C9A84C", borderColor: "#C9A84C" }}>TEARS OF JOY</span>."
+              </p>
+              <p className="text-lg leading-relaxed mb-10 font-medium" style={{ color: "#4B5E53" }}>
+                Keeping the above into consideration you may kindly consider extending support to FOCUS SOLUTIONS so as to enable us as a wide service provider, operating in sincerity and professionalism.
+              </p>
+              <div className="inline-flex flex-col items-center">
+                <div className="w-16 h-1 rounded-full mb-5" style={{ background: "#2D5A3D" }} />
+                <h4 className="text-xl font-bold" style={{ color: "#2D5A3D" }}>Mr. Pradeep Kumar Mukherjee</h4>
+                <p className="text-sm font-semibold mt-1 uppercase tracking-widest" style={{ color: "#C9A84C" }}>Proprietor, Focus Solutions</p>
               </div>
-            </motion.div>
-          ))}
+            </div>
+          </motion.div>
         </div>
 
         {/* ═══════════════ PILLARS OF CHANGE ═══════════════ */}

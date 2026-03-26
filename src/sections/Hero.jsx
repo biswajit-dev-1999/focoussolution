@@ -110,7 +110,7 @@ const Hero = () => {
               }}
             >
               <span className="w-1.5 h-1.5 rounded-full bg-[#C9A84C] animate-pulse" />
-              Focus International Foundation · Est. 2018
+              Focus International Foundation · Est. 2017
             </motion.div>
 
             {/* Main headline */}

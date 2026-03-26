@@ -234,42 +234,94 @@ const FocusSolutionsSection = () => {
         </div>
       </div>
 
-      {/* ── 4. OFFICIAL APPEAL (Premium Quote) ── */}
-      <div className="max-w-5xl mx-auto px-6 lg:px-10 mb-32 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.98 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="relative bg-white rounded-[3rem] p-10 md:p-16 lg:p-20 shadow-2xl border border-[#EDE4CE] overflow-hidden text-center"
+      {/* ── 4. FULL-WIDTH PREMIUM ELABORATION SECTION ── */}
+      <div className="w-full relative mt-16 md:mt-24 mb-24 py-20 lg:py-28 group">
+        
+        {/* Straight Full-Width Background */}
+        <div 
+          className="absolute inset-0 z-0 origin-center" 
+          style={{ 
+            background: THEME.green
+          }}
         >
-          {/* Decorative Corner Brackets */}
-          <div className="absolute top-6 left-6 w-12 h-12 border-t-2 border-l-2 rounded-tl-xl" style={{ borderColor: THEME.gold, opacity: 0.5 }} />
-          <div className="absolute top-6 right-6 w-12 h-12 border-t-2 border-r-2 rounded-tr-xl" style={{ borderColor: THEME.gold, opacity: 0.5 }} />
-          <div className="absolute bottom-6 left-6 w-12 h-12 border-b-2 border-l-2 rounded-bl-xl" style={{ borderColor: THEME.gold, opacity: 0.5 }} />
-          <div className="absolute bottom-6 right-6 w-12 h-12 border-b-2 border-r-2 rounded-br-xl" style={{ borderColor: THEME.gold, opacity: 0.5 }} />
+           {/* Dynamic Background Effects */}
+           <div className="absolute inset-0 w-full h-full opacity-30 group-hover:opacity-100 transition-opacity duration-1000 blur-2xl pointer-events-none" style={{ background: "radial-gradient(circle at 50% 50%, rgba(201, 168, 76, 0.15) 0%, transparent 60%)" }} />
+           <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full mix-blend-screen opacity-20 transform translate-x-1/3 -translate-y-1/3 pointer-events-none blur-[100px] transition-transform duration-1000 group-hover:scale-110" style={{ background: THEME.gold }} />
+           <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full mix-blend-screen opacity-10 transform -translate-x-1/3 translate-y-1/3 pointer-events-none blur-[80px]" style={{ background: "#4A7C59" }} />
+        </div>
 
-          <Quote className="absolute top-10 left-1/2 -translate-x-1/2 w-28 h-28 opacity-5 z-0" style={{ color: THEME.green }} />
-          
-          <div className="relative z-10 max-w-3xl mx-auto">
-            <h3 className="text-xs font-bold tracking-[0.25em] uppercase mb-8" style={{ color: THEME.gold }}>An Official Appeal</h3>
-            
-            <p className="text-2xl md:text-3xl font-medium leading-relaxed mb-8 italic" style={{ color: THEME.textDark }}>
-              "On behalf of FOCUS SOLUTIONS, may I draw your kind attention to be partnering with more opportunities, aiming to provide more services to build a healthy community and celebrate the <span className="font-bold border-b-2" style={{ color: THEME.gold, borderColor: THEME.gold }}>TEARS OF JOY</span>."
-            </p>
-            
-            <p className="text-lg leading-relaxed mb-10 font-medium" style={{ color: THEME.textMuted }}>
-              Keeping the above into consideration you may kindly consider extending support to FOCUS SOLUTIONS so as to enable us as a wide service provider, operating in sincerity and professionalism.
-            </p>
-
-            <div className="inline-flex flex-col items-center">
-              <div className="w-16 h-1 rounded-full mb-5" style={{ background: THEME.green }}></div>
-              <h4 className="text-xl font-bold" style={{ color: THEME.textDark }}>Mr. Pradeep Kumar Mukherjee</h4>
-              <p className="text-sm font-semibold mt-1 uppercase tracking-widest" style={{ color: THEME.gold }}>Proprietor, Focus Solutions</p>
-            </div>
-          </div>
-        </motion.div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10 flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
+             
+             {/* Left Text Content */}
+             <div className="flex-1 text-center lg:text-left py-12 lg:py-20">
+               <motion.div 
+                 initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.2, duration: 0.6 }}
+                 className="inline-flex items-center gap-3 px-6 py-2.5 rounded-full mb-8 border border-white/20 backdrop-blur-sm shadow-xl" 
+                 style={{ background: "rgba(255,255,255,0.05)" }}
+               >
+                 <Quote size={18} style={{ color: THEME.gold }} />
+                 <span className="text-sm font-bold uppercase tracking-[0.25em]" style={{ color: THEME.gold }}>The Focus Advantage</span>
+               </motion.div>
+               
+               <motion.h3 
+                 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3, duration: 0.6 }}
+                 className="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-8 leading-tight text-white drop-shadow-lg" 
+                 style={{ fontFamily: "'Gloria Hallelujah', cursive" }}
+               >
+                 A Holistic Ecosystem <br className="hidden lg:block"/> for Growth
+               </motion.h3>
+               
+               <motion.div 
+                 initial={{ scaleX: 0 }} whileInView={{ scaleX: 1 }} viewport={{ once: true }} transition={{ delay: 0.5, duration: 0.8 }}
+                 className="h-1.5 w-24 rounded-full mb-8 lg:mx-0 mx-auto" 
+                 style={{ background: "linear-gradient(to right, #C9A84C, transparent)", transformOrigin: "left" }}
+               />
+               
+               <motion.p 
+                 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.6, duration: 0.6 }}
+                 className="text-xl md:text-2xl leading-relaxed text-white/90 font-medium md:max-w-2xl mx-auto lg:mx-0"
+               >
+                 We don't just provide services; we build foundations. By synergizing our expertise across 
+                 <span className="font-bold underline decoration-2 underline-offset-4 mx-1" style={{ textDecorationColor: THEME.gold, color: "#fff" }}>Staffing</span>, 
+                 <span className="font-bold underline decoration-2 underline-offset-4 mx-1" style={{ textDecorationColor: THEME.gold, color: "#fff" }}>Data</span>, 
+                 <span className="font-bold underline decoration-2 underline-offset-4 mx-1" style={{ textDecorationColor: THEME.gold, color: "#fff" }}>Real Estate</span>, and 
+                 <span className="font-bold underline decoration-2 underline-offset-4 mx-1" style={{ textDecorationColor: THEME.gold, color: "#fff" }}>Education</span>, 
+                 we deliver unparalleled value that drives sustainable success for organizations and individuals alike.
+               </motion.p>
+             </div>
+             
+             {/* Right Floating Cards Grid */}
+             <div className="w-full lg:w-[50%] grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10 py-12 lg:py-20">
+                {services.map((service, idx) => (
+                  <motion.div 
+                    key={idx} 
+                    initial={{ opacity: 0, y: 30 }} 
+                    whileInView={{ opacity: 1, y: 0 }} 
+                    viewport={{ once: true }} 
+                    transition={{ delay: 0.4 + (idx * 0.1), duration: 0.6 }}
+                    whileHover={{ scale: 1.05, y: -5, backgroundColor: "rgba(255,255,255,0.15)", rotate: idx % 2 === 0 ? -1 : 1 }}
+                    className="p-8 md:p-10 rounded-[2rem] border transition-all duration-300 backdrop-blur-md relative overflow-hidden group/card shadow-2xl" 
+                    style={{ borderColor: "rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.05)" }}
+                  >
+                     {/* Glassmorphism highlight reflection */}
+                     <div className="absolute inset-0 opacity-0 group-hover/card:opacity-100 transition-opacity duration-500 pointer-events-none" style={{ background: "linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 100%)" }} />
+                     
+                     {/* Hover sweep for internal card */}
+                     <div className="absolute inset-x-0 bottom-0 h-1 scale-x-0 group-hover/card:scale-x-100 transition-transform duration-500 origin-left" style={{ background: THEME.gold }} />
+                     
+                     <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-black/20" style={{ background: service.color }}>
+                       <service.icon size={28} className="text-white" strokeWidth={2} />
+                     </div>
+                     <span className="text-xl md:text-2xl font-bold text-white leading-snug block drop-shadow-md">
+                       {service.name.split(" ")[0]} <br/> {service.name.split(" ").slice(1).join(" ")}
+                     </span>
+                  </motion.div>
+                ))}
+             </div>
+             
+        </div>
       </div>
+
 
       {/* ── 5. PROJECT EXPERIENCE (Row Layout) ── */}
       <div className="max-w-5xl mx-auto px-6 lg:px-10 mb-32 relative z-10">

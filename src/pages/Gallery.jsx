@@ -37,7 +37,7 @@ const CATEGORIES = ["All", "Education", "Healthcare", "Community", "Women", "Env
 const galleryItems = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=900&auto=format&fit=crop",
+    src: "/3.jpeg",
     alt: "Community Outreach Program",
     title: "Community Outreach",
     category: "Community",
@@ -45,7 +45,7 @@ const galleryItems = [
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=900&auto=format&fit=crop",
+    src: "/8.jpeg",
     alt: "Education Support",
     title: "Education Support",
     category: "Education",
@@ -53,7 +53,7 @@ const galleryItems = [
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb0?q=80&w=900&auto=format&fit=crop",
+    src: "/12.JPG",
     alt: "Healthcare Camp",
     title: "Free Healthcare Camps",
     category: "Healthcare",
@@ -61,7 +61,7 @@ const galleryItems = [
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=900&auto=format&fit=crop",
+    src: "/41.jpg",
     alt: "Women Empowerment Workshop",
     title: "Women Empowerment",
     category: "Women",
@@ -69,7 +69,7 @@ const galleryItems = [
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=900&auto=format&fit=crop",
+    src: "/food.jpg",
     alt: "Food Distribution",
     title: "Food Distribution Drive",
     category: "Relief",
@@ -77,7 +77,7 @@ const galleryItems = [
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?q=80&w=900&auto=format&fit=crop",
+    src: "/7.jpg",
     alt: "Environmental Conservation",
     title: "Tree Plantation Drive",
     category: "Environment",
@@ -85,7 +85,7 @@ const galleryItems = [
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?q=80&w=900&auto=format&fit=crop",
+    src: "/5.jpg",
     alt: "Youth Skill Development",
     title: "Youth Skill Development",
     category: "Education",
@@ -93,7 +93,7 @@ const galleryItems = [
   },
   {
     id: 8,
-    src: "https://images.unsplash.com/photo-1576765608622-067973a79f53?q=80&w=900&auto=format&fit=crop",
+    src: "/15.JPG",
     alt: "Medical Awareness Camp",
     title: "Medical Awareness Camp",
     category: "Healthcare",
@@ -101,7 +101,7 @@ const galleryItems = [
   },
   {
     id: 9,
-    src: "https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=900&auto=format&fit=crop",
+    src: "/7.jpeg",
     alt: "Community Building",
     title: "Community Building",
     category: "Community",
@@ -109,7 +109,7 @@ const galleryItems = [
   },
   {
     id: 10,
-    src: "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=900&auto=format&fit=crop",
+    src: "/78.JPG",
     alt: "Women Leadership Program",
     title: "Women Leadership",
     category: "Women",
@@ -117,7 +117,7 @@ const galleryItems = [
   },
   {
     id: 11,
-    src: "https://images.unsplash.com/photo-1519817914152-22d216bb9170?q=80&w=900&auto=format&fit=crop",
+    src: "/Disaster.jpg",
     alt: "Flood Relief Operations",
     title: "Flood Relief Operations",
     category: "Relief",
@@ -125,12 +125,105 @@ const galleryItems = [
   },
   {
     id: 12,
-    src: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=900&auto=format&fit=crop",
+    src: "/Plantation.jpg",
     alt: "Nature Conservation",
     title: "Nature Conservation",
     category: "Environment",
     desc: "Protecting natural ecosystems through grass-roots conservation efforts.",
   },
+   {
+    id: 13,
+    src: "/1.JPG",
+    category: "Education",
+   
+  },
+   {
+    id: 14,
+    src: "/5.jpeg",
+    category: "Education",
+    
+  },
+  {
+    id: 15,
+    src: "/6.jpg",
+    category: "Education",
+  },
+  {
+    id: 16,
+    src: "/10.jpg",
+    category: "Education",
+  },
+   {
+    id: 17,
+    src: "/people.jpg",
+    category: "Community",
+  },
+  {
+    id: 18,
+    src: "/com.jpg",
+    category: "Community",
+  },
+  {
+    id: 19,
+    src: "/Health.JPG",
+    category: "Healthcare",
+  },
+  {
+    id: 20,
+    src: "/Health2.JPG",
+    category: "Healthcare",
+  },
+  {
+    id: 21,
+    src: "/comunity.jpg",
+    category: "Community",
+  },
+   {
+    id: 22,
+    src: "/women.jpeg",
+    category: "Women",
+  },
+  {
+    id: 23,
+    src: "/Health3.JPG",
+    category: "Healthcare",
+  },
+   {
+    id: 24,
+    src: "/plant.jpg",
+    category: "Environment",
+  },
+  {
+    id: 25,
+    src: "/Disaster2.jpg",
+    category: "Relief",
+  },
+  {
+    id: 26,
+    src: "/Womenf.jpg",
+    category: "Women",
+  },
+   {
+    id: 27,
+    src: "/45.jpg",
+    category: "Women",
+  },
+  {
+    id: 28,
+    src: "/Health4.JPG",
+    category: "Healthcare",
+  },
+  {
+    id: 29,
+    src: "/comunity2.jpg",
+    category: "Community",
+  },
+  {
+    id: 30,
+    src: "/women2.JPG",
+    category: "Women",
+  },
+
 ];
 
 // ─── Lightbox ─────────────────────────────────────────────────────────────────

@@ -2,6 +2,8 @@ import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Star, Quote, ChevronLeft, ChevronRight, Heart, Award, Users } from "lucide-react";
 import StoriesOfChange from "../components/StoriesOfChange";
+import { image } from "motion/react-client";
+
 
 // ─── SplitText (matches other page typography) ────────────────────────────────
 const SplitText = ({ text, delayStep = 0.03, className = "", style = {} }) => {
@@ -29,82 +31,89 @@ const SplitText = ({ text, delayStep = 0.03, className = "", style = {} }) => {
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
-const testimonials = [
-  {
-    id: 1,
-    name: "Anita Sharma",
-    role: "Beneficiary – Education Program",
-    location: "Bhubaneswar, Odisha",
-    avatar: "AS",
-    avatarBg: "linear-gradient(135deg, #2D5A3D, #4A7C59)",
-    stars: 5,
-    text: "Focus International Foundation changed my daughter's life completely. Thanks to their scholarship program, she is now pursuing engineering. I am forever grateful for the support and compassion shown by every team member.",
-    tag: "Education",
+const testimonials = [ 
+  { 
+    id: 1, 
+    name: "Anita Sharma", 
+    role: "Beneficiary – Education Program", 
+    location: "Bhubaneswar, Odisha", 
+    avatar: "AS", 
+    avatarBg: "linear-gradient(135deg, #2D5A3D, #4A7C59)", 
+    stars: 5, 
+    text: "Focus International Foundation changed my daughter's life completely. Thanks to their scholarship program, she is now pursuing engineering. I am forever grateful for the support and compassion shown by every team member.", 
+    tag: "Education", 
     tagColor: "#2D5A3D",
-  },
-  {
-    id: 2,
-    name: "Rajesh Kumar Panda",
-    role: "Community Leader",
-    location: "Cuttack, Odisha",
-    avatar: "RK",
-    avatarBg: "linear-gradient(135deg, #C9A84C, #E8C96A)",
-    stars: 5,
-    text: "The health camp organised by Focus Foundation in our village was a blessing. Over 200 families received free medical check-ups and medicines. Their dedication to marginalised communities is truly inspiring.",
-    tag: "Healthcare",
+    image:"/sc1.png", 
+  }, 
+  { 
+    id: 2, 
+    name: "Rajesh Kumar Panda", 
+    role: "Community Leader", 
+    location: "Cuttack, Odisha", 
+    avatar: "RK", 
+    avatarBg: "linear-gradient(135deg, #C9A84C, #E8C96A)", 
+    stars: 5, 
+    text: "The health camp organised by Focus Foundation in our village was a blessing. Over 200 families received free medical check-ups and medicines. Their dedication to marginalised communities is truly inspiring.", 
+    tag: "Healthcare", 
     tagColor: "#7C3D2D",
-  },
-  {
-    id: 3,
-    name: "Priya Mohapatra",
-    role: "Livelihood Program Participant",
-    location: "Puri, Odisha",
-    avatar: "PM",
-    avatarBg: "linear-gradient(135deg, #4A2D7C, #7A5AB3)",
-    stars: 5,
-    text: "I was a daily-wage worker with no savings. The skill development training helped me start my own tailoring unit. Now I employ three other women from my neighbourhood. Thank you Focus Foundation!",
-    tag: "Livelihoods",
+    image:"/sc.png", 
+  }, 
+  { 
+    id: 3, 
+    name: "Priya Mohapatra", 
+    role: "Livelihood Program Participant", 
+    location: "Puri, Odisha", 
+    avatar: "PM", 
+    avatarBg: "linear-gradient(135deg, #4A2D7C, #7A5AB3)", 
+    stars: 5, 
+    text: "I was a daily-wage worker with no savings. The skill development training helped me start my own tailoring unit. Now I employ three other women from my neighbourhood. Thank you Focus Foundation!", 
+    tag: "Livelihoods", 
     tagColor: "#4A2D7C",
-  },
-  {
-    id: 4,
-    name: "Dr. Subhashree Das",
-    role: "Partner – Utkal Hospital",
-    location: "Bhubaneswar, Odisha",
-    avatar: "SD",
-    avatarBg: "linear-gradient(135deg, #2D5A6E, #4A8CA8)",
-    stars: 5,
-    text: "We have collaborated with Focus International Foundation for medical outreach camps across rural Odisha. Their professionalism, empathy, and on-ground coordination are exceptional. Highly recommend.",
-    tag: "Healthcare",
+    image:"/sc2.png", 
+  }, 
+  { 
+    id: 4, 
+    name: "Dr. Subhashree Das", 
+    role: "Partner – Utkal Hospital", 
+    location: "Bhubaneswar, Odisha", 
+    avatar: "SD", 
+    avatarBg: "linear-gradient(135deg, #2D5A6E, #4A8CA8)", 
+    stars: 5, 
+    text: "We have collaborated with Focus International Foundation for medical outreach camps across rural Odisha. Their professionalism, empathy, and on-ground coordination are exceptional. Highly recommend.", 
+    tag: "Healthcare", 
     tagColor: "#2D5A6E",
-  },
-  {
-    id: 5,
-    name: "Mohammed Iqbal",
-    role: "Disaster Relief Volunteer",
-    location: "Balasore, Odisha",
-    avatar: "MI",
-    avatarBg: "linear-gradient(135deg, #5A2D2D, #A85A5A)",
-    stars: 5,
-    text: "During the Cyclone Yaas response, Focus Foundation was among the first to reach the affected villages with food, water, and medical supplies. Their rapid relief work saved countless lives in our district.",
-    tag: "Disaster Relief",
+    image:"/sc3.png", 
+  }, 
+  { 
+    id: 5, 
+    name: "Mohammed Iqbal", 
+    role: "Disaster Relief Volunteer", 
+    location: "Balasore, Odisha", 
+    avatar: "MI", 
+    avatarBg: "linear-gradient(135deg, #5A2D2D, #A85A5A)", 
+    stars: 5, 
+    text: "During the Cyclone Yaas response, Focus Foundation was among the first to reach the affected villages with food, water, and medical supplies. Their rapid relief work saved countless lives in our district.", 
+    tag: "Disaster Relief", 
     tagColor: "#5A2D2D",
-  },
-  {
-    id: 6,
-    name: "Sunita Behera",
-    role: "Women's Empowerment SHG Leader",
-    location: "Khordha, Odisha",
-    avatar: "SB",
-    avatarBg: "linear-gradient(135deg, #1E5A3D, #38876B)",
-    stars: 5,
-    text: "Our Self Help Group received micro-finance support and business training from Focus Foundation. Today our group generates ₹2 lakh monthly revenue. They didn't just give us funds — they gave us confidence.",
-    tag: "Women Empowerment",
+    image:"/sc4.png", 
+  }, 
+  { 
+    id: 6, 
+    name: "Sunita Behera", 
+    role: "Women's Empowerment SHG Leader", 
+    location: "Khordha, Odisha", 
+    avatar: "SB", 
+    avatarBg: "linear-gradient(135deg, #1E5A3D, #38876B)", 
+    stars: 5, 
+    text: "Our Self Help Group received micro-finance support and business training from Focus Foundation. Today our group generates ₹2 lakh monthly revenue. They didn't just give us funds — they gave us confidence.", 
+    tag: "Women Empowerment", 
     tagColor: "#1E5A3D",
-  },
+    image:"/sc5.png", 
+  }, 
 ];
 
-const stats = [
+
+  const stats = [
   { icon: Users, value: "5,000+", label: "Lives Impacted" },
   { icon: Heart, value: "98%", label: "Satisfaction Rate" },
   { icon: Award, value: "12+", label: "Years of Service" },
@@ -138,8 +147,9 @@ const Tag = ({ label, color }) => (
   </span>
 );
 
-const TestimonialCard = ({ item, index }) => (
+const TestimonialCard = ({ item, index, onClick }) => (
   <motion.div
+    onClick={onClick}
     initial={{ opacity: 0, y: 40 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.55, delay: index * 0.08 }}
@@ -155,30 +165,14 @@ const TestimonialCard = ({ item, index }) => (
     }}
   >
     {/* Top */}
-    <div className="flex items-start justify-between gap-3">
-      <div className="flex items-center gap-3">
-        <Avatar initials={item.avatar} bg={item.avatarBg} />
-        <div>
-          <p className="font-bold text-sm" style={{ color: "#1A3322" }}>{item.name}</p>
-          <p className="text-xs font-medium" style={{ color: "#4B5E53" }}>{item.role}</p>
-          <p className="text-xs mt-0.5" style={{ color: "#8A9E93" }}>{item.location}</p>
-        </div>
-      </div>
-      <Quote size={28} style={{ color: "#C9A84C", opacity: 0.5, flexShrink: 0 }} />
-    </div>
+
 
     {/* Stars */}
-    <StarRating count={item.stars} />
-
-    {/* Text */}
-    <p className="text-sm leading-relaxed flex-1" style={{ color: "#3D5045" }}>
-      "{item.text}"
-    </p>
-
-    {/* Tag */}
-    <div className="pt-1">
-      <Tag label={item.tag} color={item.tagColor} />
-    </div>
+    <img
+      src={item.image}
+      alt="testimonial"
+      className="w-full h-64 object-cover rounded-xl"
+    />
   </motion.div>
 );
 
@@ -190,6 +184,7 @@ const FeaturedCarousel = () => {
 
   const prev = () => setCurrent((c) => (c === 0 ? testimonials.length - 1 : c - 1));
   const next = () => setCurrent((c) => (c === testimonials.length - 1 ? 0 : c + 1));
+
 
   return (
     <div
@@ -248,6 +243,7 @@ const FeaturedCarousel = () => {
             </div>
           </div>
         </motion.div>
+
       </AnimatePresence>
 
       {/* Controls */}
@@ -301,6 +297,7 @@ const FeaturedCarousel = () => {
 // ─── Main Section ─────────────────────────────────────────────────────────────
 
 const TestimonialsSection = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
   return (
     <section
       className="w-full"
@@ -357,6 +354,25 @@ const TestimonialsSection = () => {
             Hear directly from the communities, partners, and beneficiaries whose lives have been transformed through the work of Focus International Foundation.
           </p>
         </motion.div>
+        <AnimatePresence>
+          {selectedImage && (
+            <motion.div
+              className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setSelectedImage(null)}
+            >
+              <motion.img
+                src={selectedImage}
+                className="max-w-[90%] max-h-[90%] rounded-2xl"
+                initial={{ scale: 0.8 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0.8 }}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       {/* ── Stats Bar ── */}
@@ -425,7 +441,12 @@ const TestimonialsSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((item, i) => (
-            <TestimonialCard key={item.id} item={item} index={i} />
+            <TestimonialCard
+              key={item.id}
+              item={item}
+              index={i}
+              onClick={() => setSelectedImage(item.image)}
+            />
           ))}
         </div>
       </div>

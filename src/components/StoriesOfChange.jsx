@@ -5,7 +5,7 @@ const stories = [
   {
     name: "Rina",
     story: "Received education support and is now the first girl in her village to attend college.",
-    img: "/story1.jpg",
+    img: "/78.JPG",
   },
   {
     name: "Arjun",

@@ -63,14 +63,14 @@ const FocusSolutionsSection = () => {
       bg: "#FDF5E0", color: "#C9A84C"
     },
     {
-      title: "Vidaya Bhaban Education",
+      title: "Vidya Bhawan Education",
       desc: "Educational project for Odisha assigned by IIT Bhubaneswar, Research and Entrepreneurship Park.",
       icon: GraduationCap,
       bg: "#E8F2EC", color: "#4A7C59"
     },
     {
       title: "Real Estate Consultancy",
-      desc: "Consultancy and management assigned by SALASS Infra Solutions.",
+      desc: "Led consultancy initiatives and management operations for SALASS Infra Solutions.",
       icon: Building,
       bg: "#FDF5E0", color: "#B8860B"
     }
@@ -405,10 +405,9 @@ const FocusSolutionsSection = () => {
             </div>
           </div>
 
-          <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="relative z-10  gap-8">
             {[
-              { icon: MapPin, title: "Registered Office", text: "N-3/368, IRC Village, Nayapalli, Bhubaneswar, Khurdha, Odisha - 751015" },
-              { icon: Building2, title: "Admin Office", text: "RAY/74 Ekamar Villa, Behera-Sahi (Infront of Sekhar Royale Apartment), Nayapalli Bhubaneswar - 751015" },
+             
               { icon: Briefcase, title: "Functional Office", text: "CSM campus, Niladrivihar omfed colony, Near Utkal Hospital, Bhubaneswar, 751016, Odisha." }
             ].map((office, i) => (
               <div key={i} className="p-8 rounded-3xl border transition-colors hover:bg-white/10" style={{ background: "rgba(255,255,255,0.03)", borderColor: "rgba(255,255,255,0.1)" }}>

@@ -95,7 +95,7 @@ const ContactSection = () => {
                 <div>
                   <p className="text-base font-bold" style={{ color: "#2D5A3D" }}>Office Address</p>
                   <p className="text-base leading-relaxed">
-                    Niladri Vihar Omfed Sahi, (Near Utkal Hospital)<br/>
+                    Niladri Vihar Omfed Colony, (Near Utkal Hospital)<br/>
                     Post- Chandrasekharpur, Bhubaneswar, Odisha. Pin- 751021
                   </p>
                 </div>
@@ -118,7 +118,7 @@ const ContactSection = () => {
             <div className="mt-8 rounded-2xl overflow-hidden shadow-md" style={{ border: "1px solid #EDE4CE" }}>
               <iframe
                 title="Focus International Foundation Location"
-                src="https://maps.google.com/maps?q=20.2916969,85.8075064&z=17&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3556.2959219145264!2d85.79751007523755!3d20.3243362811545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDE5JzI3LjYiTiA4NcKwNDgnMDAuMyJF!5e1!3m2!1sen!2sin!4v1774681609828!5m2!1sen!2sin"
                 className="w-full h-64 border-0"
                 loading="lazy"
                 allowFullScreen

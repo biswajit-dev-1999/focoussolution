@@ -100,7 +100,7 @@ const Footer = () => {
               <MapPin size={16} className="mt-0.5 shrink-0" style={{ color: "#C9A84C" }} />
               <div>
                 <span className="block font-semibold text-white">Office Address:</span>
-                Niladri Vihar Omfed Sahi, (Near Utkal Hospital)<br/>
+                Niladri Vihar Omfed Colony, (Near Utkal Hospital)<br/>
                 Post- Chandrasekharpur, Bhubaneswar, Odisha. Pin- 751021
               </div>
             </li>

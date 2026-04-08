@@ -43,15 +43,13 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `
                   transition-all duration-300
-                  ${
-                    isFocusSolutions
-                      ? "px-4 py-1.5 rounded-full text-sm font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 text-[#1E3D2F] shadow-md"
-                      : "text-base font-medium"
+                  ${isFocusSolutions
+                    ? "px-4 py-1.5 rounded-full text-sm font-bold bg-linear-to-r from-yellow-400 to-yellow-600 text-[#1E3D2F] shadow-md"
+                    : "text-base font-medium"
                   }
-                  ${
-                    isActive
-                      ? "text-[#1A3322]"
-                      : "text-[#4B5E53] hover:text-[#2D5A3D]"
+                  ${isActive
+                    ? "text-[#1A3322]"
+                    : "text-[#4B5E53] hover:text-[#2D5A3D]"
                   }
                 `
                 }
@@ -63,27 +61,18 @@ const Navbar = () => {
 
           {/* Donate Button */}
           {/* Donate Button */}
-<motion.div 
-  whileHover={{ scale: 1.05 }} 
-  whileTap={{ scale: 0.95 }}
-  className="flex-shrink-0" // Prevents the container from squishing
->
-  <Link
-    to="/donate"
-    className="
-      px-6 py-3 text-base
-      rounded-xl font-semibold
-      text-[#FDF8F0]
-      bg-gradient-to-r from-[#2D5A3D] to-[#4A7C59]
-      hover:from-[#1E3D2F] hover:to-[#2D5A3D]
-      shadow-md hover:shadow-lg
-      transition-all duration-300
-      whitespace-nowrap 
-    "
-  >
-    Donate Now
-  </Link>
-</motion.div>
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="shrink-0" // Prevents the container from squishing
+          >
+            <Link
+              to="/donate"
+              className="px-6 py-3 text-base rounded-xl font-semibold text-[#FDF8F0] bg-linear-to-r from-[#2D5A3D] to-[#4A7C59] hover:from-[#1E3D2F] hover:to-[#2D5A3D] shadow-md hover:shadow-lg transition-all duration-300 whitespace-nowrap "
+            >
+              Donate Now
+            </Link>
+          </motion.div>
         </div>
 
         {/* Hamburger Button (VISIBLE on sm + md) */}
@@ -115,10 +104,9 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     `
                     text-center py-2 rounded-lg text-sm font-medium transition
-                    ${
-                      isActive
-                        ? "bg-emerald-100 text-[#1A3322]"
-                        : "text-[#4B5E53]"
+                    ${isActive
+                      ? "bg-emerald-100 text-[#1A3322]"
+                      : "text-[#4B5E53]"
                     }
                   `
                   }
@@ -134,7 +122,7 @@ const Navbar = () => {
                 className="
                   mt-3 py-3 rounded-xl text-center font-semibold text-sm
                   text-white
-                  bg-gradient-to-r from-[#2D5A3D] to-[#4A7C59]
+                  bg-linear-to-r from-[#2D5A3D] to-[#4A7C59]
                 "
               >
                 Donate Now

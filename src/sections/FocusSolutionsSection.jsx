@@ -116,7 +116,7 @@ const FocusSolutionsSection = () => {
         >
           <div className="w-2 h-2 rounded-full animate-pulse" style={{ background: THEME.gold }} />
           <span className="text-xs font-bold tracking-[0.2em] uppercase" style={{ color: THEME.gold }}>
-            A Division of Focus International
+            A Support for Focus International Foundation
           </span>
         </motion.div>
         

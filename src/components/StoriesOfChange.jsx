@@ -10,12 +10,12 @@ const stories = [
   {
     name: "Arjun",
     story: "Got nutrition support and overcame severe malnutrition.",
-    img: "/story2.jpg",
+    img: "/arjun.JPG",
   },
   {
     name: "Meena",
     story: "Joined our women empowerment program and now runs her own tailoring business.",
-    img: "/story3.jpg",
+    img: "/mena.jpg",
   },
 ];
 

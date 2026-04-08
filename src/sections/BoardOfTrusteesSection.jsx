@@ -32,20 +32,20 @@ const teamMembers = [
     name: "Mr.Pradeep Kumar Mukherjee",
     role: "Chief Executive",
     img: "/photo1.png",
-    desc: "Has a dynamic personality with expertise in team management, social work, and business administration."
+    desc: "A leader with expertise in team management, social work, and business administration."
   },
   {
     name: "Mrs.Meenakshi Chakroborty",
     role: "Trustee",
     img: "/photo3.png",
-    desc: "Skilled in counselling, team management, and financial operations with real estate knowledge."
+    desc: "An expert in counseling, team management, educational and real estate experience, supporting the foundation with full agility."
 
   },
   {
     name: "Adv. Debendra Nath Swain",
     role: "Trustee",
     img: "/photo2.png",
-    desc: "A dynamic lawyer with a successful journey in the legal field, skilled in administration."
+    desc: "A dynamic lawyer with a successful journey in the legal field and skilled in administration has been the pro active body of the foundation."
   },
   {
     name: "Abhilipsa Das",
@@ -160,7 +160,7 @@ const BoardOfTrusteesSection = () => {
           </div>
 
           {/* Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-14 auto-rows-fr">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 lg:gap-10 auto-rows-fr">
             {teamMembers.map((member, idx) => (
               <motion.div
                 key={idx}
@@ -173,13 +173,13 @@ const BoardOfTrusteesSection = () => {
                 <div className="h-full flex flex-col">
 
                   {/* Image Card */}
-                  <div className="relative rounded-4xl overflow-hidden h-64 shadow-xl border border-[#EDE4CE] bg-[#FDF8F0]">
+                  <div className="relative rounded-4xl overflow-hidden  bg-gray-100">
 
                     <img
                       src={member.img}
                       alt={member.name}
                       loading="lazy"
-                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                      className="w-full h-94 object-cover object-top "
                     />
 
                     {/* Overlay */}

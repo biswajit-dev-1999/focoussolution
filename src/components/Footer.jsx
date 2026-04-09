@@ -87,7 +87,7 @@ const Footer = () => {
             Contact
           </h3>
           <p className="text-sm mb-3" style={{ color: "rgba(253,248,240,0.85)" }}>
-            Website: <a href="https://focusfoundation.in" target="_blank" rel="noreferrer" className="underline hover:text-white">focusinternational.org.in</a>
+            Website: <a href="https://focusfoundation.in" target="_blank" rel="noreferrer" className="underline hover:text-white">https://focusfoundation.in</a>
           </p>
           <ul className="space-y-4 text-sm" style={{ color: "rgba(253,248,240,0.72)" }}>
             <li className="flex items-center gap-3">

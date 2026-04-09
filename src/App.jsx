@@ -13,7 +13,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import "./App.css";
-import FocusSolutions from "./pages/FocusSolutions";
+// import FocusSolutions from "./pages/FocusSolutions";
 import BoardOfTrustees from "./pages/BoardOfTrustees";
 import Privacy from "./pages/Privacy";
 import Contact from "./pages/Contact";
@@ -38,7 +38,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/focus-solutions" element={<FocusSolutions />} />
+        {/* <Route path="/focus-solutions" element={<FocusSolutions />} /> */}
         <Route path="/board-of-trustees" element={<BoardOfTrustees />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/contact" element={<Contact />} />

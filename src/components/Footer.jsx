@@ -87,14 +87,14 @@ const Footer = () => {
             Contact
           </h3>
           <p className="text-sm mb-3" style={{ color: "rgba(253,248,240,0.85)" }}>
-            Website: <a href="https://focusinternational.org.in" target="_blank" rel="noreferrer" className="underline hover:text-white">focusinternational.org.in</a>
+            Website: <a href="https://focusfoundation.in" target="_blank" rel="noreferrer" className="underline hover:text-white">focusinternational.org.in</a>
           </p>
           <ul className="space-y-4 text-sm" style={{ color: "rgba(253,248,240,0.72)" }}>
             <li className="flex items-center gap-3">
               <Phone size={15} style={{ color: "#C9A84C" }} /> +91 7894992972, 9437439265
             </li>
             <li className="flex items-center gap-3">
-              <Mail size={15} style={{ color: "#C9A84C" }} /> focusinternational2014@gmail.com
+              <Mail size={15} style={{ color: "#C9A84C" }} />  info@focusfoundation.in
             </li>
             <li className="flex items-start gap-3">
               <MapPin size={16} className="mt-0.5 shrink-0" style={{ color: "#C9A84C" }} />

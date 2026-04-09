@@ -78,7 +78,7 @@ const ContactSection = () => {
                 <div className="p-2.5 rounded-xl" style={{ background: "#E8F2EC" }}>
                   <Mail size={22} style={{ color: "#2D5A3D" }} />
                 </div>
-                <p className="text-lg">focusinternational2014@gmail.com</p>
+                <p className="text-lg"> info@focusfoundation.in</p>
               </div>
 
               <div className="flex items-center gap-4">

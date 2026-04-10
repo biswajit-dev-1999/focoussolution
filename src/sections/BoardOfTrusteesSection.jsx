@@ -37,7 +37,7 @@ const teamMembers = [
   {
     name: "Mrs.Meenakshi Chakroborty",
     role: "Trustee",
-    img: "/photo3.png",
+    img: "/photo3.jpeg",
     desc: "An expert in counseling, team management, educational and real estate experience, supporting the foundation with full agility."
 
   },
@@ -48,7 +48,7 @@ const teamMembers = [
     desc: "A dynamic lawyer with a successful journey in the legal field and skilled in administration has been the pro active body of the foundation."
   },
   {
-    name: "Abhilipsa Das",
+    name: "Ms. Abhilipsa Das",
     role: "Trustee",
     img: "/photo4.jpeg",
     desc: "A young and dynamic HR professional serving as a Trustee, with a strong passion for people and community development."

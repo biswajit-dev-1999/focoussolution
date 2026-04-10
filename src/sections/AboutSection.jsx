@@ -327,7 +327,7 @@ const AboutSection = () => {
             <div className="relative z-10 max-w-3xl mx-auto">
               <h3 className="text-xs font-bold tracking-[0.25em] uppercase mb-8" style={{ color: "#C9A84C" }}>An Official Appeal</h3>
               <p className="text-2xl md:text-3xl font-medium leading-relaxed mb-8 italic" style={{ color: "#2D5A3D" }}>
-                "On behalf of FOCUS INTERNATIONAL SOLUTIONS, may I draw your kind attention to be partnering with more opportunities, aiming to provide more services to build a healthy community and celebrate the{" "}
+                "On behalf of FOCUS INTERNATIONAL FOUNDATION, may I draw your kind attention to be partnering with more opportunities, aiming to provide more services to build a healthy community and celebrate the{" "}
                 <span className="font-bold border-b-2" style={{ color: "#C9A84C", borderColor: "#C9A84C" }}>TEARS OF JOY</span>."
               </p>
               <p className="text-lg leading-relaxed mb-10 font-medium" style={{ color: "#4B5E53" }}>

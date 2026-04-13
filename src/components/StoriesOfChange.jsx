@@ -8,8 +8,8 @@ const stories = [
     img: "/78.JPG",
   },
   {
-    name: "Arjun",
-    story: "Got nutrition support and overcame severe malnutrition.",
+    name: "Niroj",
+    story: "Orphan helped and now Business.",
     img: "/arjun.JPG",
   },
   {

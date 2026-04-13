@@ -93,7 +93,7 @@ const ContactSection = () => {
                   <MapPin size={22} style={{ color: "#C9A84C" }} />
                 </div>
                 <div>
-                  <p className="text-base font-bold" style={{ color: "#2D5A3D" }}>Office Address</p>
+                  <p className="text-base font-bold" style={{ color: "#2D5A3D" }}>Functional Office</p>
                   <p className="text-base leading-relaxed">
                     Niladri Vihar Omfed Colony, (Near Utkal Hospital)<br/>
                     Post- Chandrasekharpur, Bhubaneswar, Odisha. Pin- 751021

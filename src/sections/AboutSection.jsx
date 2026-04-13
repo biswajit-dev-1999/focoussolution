@@ -136,7 +136,7 @@ const AboutSection = () => {
           >
             {/* Main Image */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl" style={{ border: "2px solid #EDE4CE" }}>
-              <img src="/education.jpg" alt="Foundation Work" className="w-full h-[450px] md:h-[550px] object-cover" />
+              <img src="/Tu2.jpg" alt="Foundation Work" className="w-full h-[450px] md:h-[550px] object-cover" />
               <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(45,90,61,0.85), transparent)" }} />
               <div className="absolute bottom-10 left-8 right-8 text-white">
                 <div style={{ fontFamily: "'Gloria Hallelujah', cursive", fontSize: '2.2rem', lineHeight: '1.2' }} className="mb-3">
@@ -226,7 +226,7 @@ const AboutSection = () => {
           >
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden shadow-md mb-4 flex items-center justify-center text-4xl"
               style={{ background: "#FDF5E0", border: "3px solid #C9A84C", color: "#C9A84C" }}>
-              👤
+              <img src="/Gemini_Generated_Image_t5yv5dt5yv5dt5yv.png" alt="" />
             </div>
             <h3 className="text-xl font-bold" style={{ color: "#2D5A3D" }}>
               Mr. Pradeep Kumar Mukherjee
@@ -327,7 +327,7 @@ const AboutSection = () => {
             <div className="relative z-10 max-w-3xl mx-auto">
               <h3 className="text-xs font-bold tracking-[0.25em] uppercase mb-8" style={{ color: "#C9A84C" }}>An Official Appeal</h3>
               <p className="text-2xl md:text-3xl font-medium leading-relaxed mb-8 italic" style={{ color: "#2D5A3D" }}>
-                "On behalf of FOCUS INTERNATIONAL FOUNDATION, may I draw your kind attention to be partnering with more opportunities, aiming to provide more services to build a healthy community and celebrate the{" "}
+                "On behalf of FOCUS INTERNATIONAL FOUNDATION, may We draw your kind attention to be partnering with more opportunities, aiming to provide more services to build a healthy community and celebrate the{" "}
                 <span className="font-bold border-b-2" style={{ color: "#C9A84C", borderColor: "#C9A84C" }}>TEARS OF JOY</span>."
               </p>
               <p className="text-lg leading-relaxed mb-10 font-medium" style={{ color: "#4B5E53" }}>
@@ -336,7 +336,7 @@ const AboutSection = () => {
               <div className="inline-flex flex-col items-center">
                 <div className="w-16 h-1 rounded-full mb-5" style={{ background: "#2D5A3D" }} />
                 <h4 className="text-xl font-bold" style={{ color: "#2D5A3D" }}>Mr. Pradeep Kumar Mukherjee</h4>
-                <p className="text-sm font-semibold mt-1 uppercase tracking-widest" style={{ color: "#C9A84C" }}>Proprietor, Focus Solutions</p>
+                <p className="text-sm font-semibold mt-1 uppercase tracking-widest" style={{ color: "#C9A84C" }}>Chief Functionary</p>
               </div>
             </div>
           </motion.div>

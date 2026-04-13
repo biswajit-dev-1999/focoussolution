@@ -31,8 +31,8 @@ const teamMembers = [
   {
     name: "Mr.Pradeep Kumar Mukherjee",
     role: "Chief Executive",
-    img: "/photo1.png",
-    desc: "A leader with expertise in team management, social work, and business administration."
+    img: "/image.png",
+    desc: "Working towards a just and compassionate society through strong leadership, teamwork, and impactful social initiatives."
   },
   {
     name: "Mrs.Meenakshi Chakroborty",
@@ -117,7 +117,7 @@ const BoardOfTrusteesSection = () => {
 
           <div className="space-y-6 text-lg md:text-xl leading-relaxed text-[#4B5E53]">
             <p>
-              At Focus International Foundation, our purpose is deeply rooted in service, dignity, and compassion.
+              Focus International Foundation, our purpose is deeply rooted in service, dignity, and compassion.
               We believe that every single act of kindness creates a powerful ripple effect, extending far beyond the immediate moment to touch thousands of lives.
             </p>
             <p className="font-medium text-[#2D5A3D]">
@@ -213,50 +213,7 @@ const BoardOfTrusteesSection = () => {
 
 
       {/* ── NEW: FOCUS SOLUTIONS TEAM ── */}
-      <div className="relative z-10 bg-[#FDF8F0] py-24 lg:py-32 overflow-hidden border-t border-[#EDE4CE]">
-        {/* Decorative Background for Team */}
-        <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <div className="w-[800px] h-[800px] bg-[#C9A84C] rounded-full blur-[150px] opacity-[0.08] pointer-events-none transform translate-y-1/4" />
-        </div>
-
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
-          <div className="text-center mb-16">
-            <span className="text-sm font-bold tracking-[0.2em] uppercase text-[#C9A84C] mb-4 block">Our Dedicated Team</span>
-            <div style={{ fontFamily: "'Gloria Hallelujah', cursive" }}>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#2D5A3D]">Focus Solutions</h2>
-            </div>
-            <div className="w-24 h-1.5 mx-auto rounded-full bg-[#C9A84C] mt-6"></div>
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: 30 }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white relative aspect-video group"
-          >
-            {/* The single team image */}
-            <img src="/101.jpg" alt="Focus Solutions Team" className="w-full h-full object-cover transition-transform duration-[10s] ease-linear group-hover:scale-110" />
-
-            {/* Overlay Gradient that stays crisp */}
-            <div className="absolute inset-0 bg-linear-to-t from-[#2D5A3D]/80 via-[#2D5A3D]/20 to-transparent hidden md:block"></div>
-            <div className="absolute inset-0 bg-[#2D5A3D]/40 md:hidden"></div>
-
-            {/* Text Overlay */}
-            <div className="absolute bottom-8 left-8 right-8 md:bottom-16 md:left-16 md:right-16 transform translate-y-0 text-center md:text-left">
-              <h3 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mb-3 drop-shadow-xl" style={{ fontFamily: "'Gloria Hallelujah', cursive" }}>
-                United in Excellence
-              </h3>
-              <p className="text-white/95 text-lg md:text-xl font-medium drop-shadow-md max-w-2xl leading-relaxed mx-auto md:mx-0">
-                Together we ideate, innovate, and implement dynamic solutions that empower communities and individuals alike to reach their highest potential.
-              </p>
-            </div>
-
-            {/* Decorative Gold Frame inside */}
-            <div className="absolute inset-4 md:inset-6 border border-white/20 rounded-[2.5rem] pointer-events-none mix-blend-overlay"></div>
-          </motion.div>
-        </div>
-      </div>
+     
 
     </section>
   );

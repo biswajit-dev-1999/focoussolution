@@ -432,7 +432,7 @@ const TestimonialsSection = () => {
             All Testimonials
           </span>
           <h2 className="text-3xl sm:text-4xl font-black" style={{ color: "#1A3322" }}>
-            What Our Community Says
+            What Our Visitors Says
           </h2>
           <p className="text-sm mt-3 max-w-xl" style={{ color: "#4B5E53" }}>
             Every review represents a real life changed. Here are the words directly from the people we serve.

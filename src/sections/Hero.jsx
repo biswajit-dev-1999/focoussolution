@@ -33,13 +33,13 @@ const SplitText = ({ text, delayStep = 0.04, className = "", style = {} }) => {
 
 // ─── Data ──────────────────────────────────────────────
 const SLIDES = [
-  { img: "/201.png" },
-  { img: "/202.png" },
-  { img: "/203.png" },
+  { img: "/8.jpeg" },
+  { img: "/7.jpeg" },
+  { img: "/1.JPG" },
 ];
 
 const STATS = [
-  { icon: BookOpen, value: "12K+", label: "Children Educated" },
+  { icon: BookOpen, value: "10K+", label: "Children Educated" },
   { icon: Utensils, value: "3.8M+", label: "Meals Distributed" },
   { icon: Users, value: "4.6K+", label: "Women Empowered" },
   { icon: Heart, value: "50K+", label: "Lives Impacted" },
@@ -138,7 +138,7 @@ const Hero = () => {
           <div className="hidden md:flex flex-1 justify-center">
             <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-yellow-500 shadow-xl">
               <img
-                src="/201.png"
+                src="/tu.jpg"
                 alt=""
                 className="w-full h-full object-cover"
               />

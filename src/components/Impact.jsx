@@ -94,7 +94,7 @@ const StatPanel = ({ Icon, numericValue, formatFn, label, iconColor, delay }) =>
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 const STATS = [
-  { Icon: School,   numericValue: 12500,    formatFn: n => `${n.toLocaleString()}+`,  label: "Children Educated",  iconColor: "#C9A84C", delay: 0 },
+  { Icon: School,   numericValue: 10000,    formatFn: n => `${n.toLocaleString()}+`,  label: "Children Educated",  iconColor: "#C9A84C", delay: 0 },
   { Icon: Utensils, numericValue: 3800000,  formatFn: n => `${(n/1000000).toFixed(1)}M+`, label: "Meals Served",   iconColor: "#6FCF97", delay: 0.12 },
   { Icon: Heart,    numericValue: 4600,     formatFn: n => `${n.toLocaleString()}+`,  label: "Women Empowered",    iconColor: "#F2994A", delay: 0.24 },
   { Icon: Users,    numericValue: 1200,     formatFn: n => `${n.toLocaleString()}+`,  label: "Volunteers",         iconColor: "#56CCF2", delay: 0.36 },

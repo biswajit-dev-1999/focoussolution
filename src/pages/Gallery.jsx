@@ -117,7 +117,7 @@ const galleryItems = [
   },
   {
     id: 11,
-    src: "/Disaster.jpg",
+    src: "/2.jpg",
     alt: "Flood Relief Operations",
     title: "Flood Relief Operations",
     category: "Relief",
@@ -195,7 +195,7 @@ const galleryItems = [
   },
   {
     id: 25,
-    src: "/Disaster2.jpg",
+    src: "/3.jpg",
     category: "Relief",
   },
   {
@@ -213,13 +213,9 @@ const galleryItems = [
     src: "/Health4.JPG",
     category: "Healthcare",
   },
+  
   {
     id: 29,
-    src: "/comunity2.jpg",
-    category: "Community",
-  },
-  {
-    id: 30,
     src: "/women2.JPG",
     category: "Women",
   },

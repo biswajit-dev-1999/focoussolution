@@ -4,20 +4,29 @@ import { QrCode, Banknote, CreditCard, Wallet, Heart, ArrowRight, Phone } from "
 
 // SplitText component for fancy heading animation
 const SplitText = ({ text, delayStep = 0.03, className, style }) => {
-  const letters = useMemo(() => text.split(""), [text]);
+  const words = useMemo(() => text.split(" "), [text]);
+
   return (
-    <h2 className={`inline-block overflow-hidden ${className}`} style={style}>
-      {letters.map((char, i) => (
-        <motion.span
-          key={i}
-          className="inline-block"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: i * delayStep, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
-          {char === " " ? "\u00A0" : char}
-        </motion.span>
+    <h2 className={`overflow-hidden ${className}`} style={style}>
+      {words.map((word, wi) => (
+        <span key={wi} className="inline-block whitespace-nowrap mr-6">
+          {word.split("").map((char, ci) => (
+            <motion.span
+              key={ci}
+              className="inline-block"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.4,
+                delay: (wi * 0.2) + (ci * delayStep),
+                ease: "easeOut",
+              }}
+              viewport={{ once: true }}
+            >
+              {char}
+            </motion.span>
+          ))}
+        </span>
       ))}
     </h2>
   );
@@ -43,7 +52,7 @@ const DonateSection = () => {
       {/* ========================= HERO SECTION ========================= */}
       <div className="pt-32 pb-20 px-6 lg:px-10 max-w-7xl mx-auto relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
-          
+
           <motion.div className="flex-1 text-center lg:text-left" initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
@@ -55,18 +64,21 @@ const DonateSection = () => {
               <span className="text-xs font-bold tracking-widest uppercase text-[#C9A84C]">Make A Difference</span>
             </motion.div>
 
-            <div style={{ fontFamily: "'Gloria Hallelujah', cursive" }} className="mb-8">
+            <div
+              style={{ fontFamily: "'Gloria Hallelujah', cursive" }}
+              className="mb-8 max-w-full"
+            >
               <SplitText
                 text="Your Donation Creates Hope"
-                className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight"
+                className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight  text-center"
                 style={{ color: THEME.green }}
               />
             </div>
 
             <p className="text-xl leading-relaxed text-[#4B5E53] mb-8 font-medium">
-              We appeal to you on behalf of <strong className="text-[#2D5A3D]">FOCUS INTERNATIONAL FOUNDATION</strong>. Join us in our mission to build a healthier, stronger society, and to celebrate the "Tears of Joy" in the people we help.
+              We appeal to you on behalf of <strong className="text-[#2D5A3D]">FOCUS INTERNATIONAL FOUNDATION</strong>. Join us in our mission to build a healthier, stronger society, and to celebrate the "Tears of Joy" among the people we help.
             </p>
-            <p className="text-sm font-semibold text-[#7A8F81] leading-relaxed uppercase tracking-wider">
+            <p className="text-sm font-extrabold text-[#7A8F81] leading-relaxed uppercase tracking-wider bg-[#F0F7F3] border-l-4 border-[#7A8F81] px-4 py-3 rounded-md shadow-sm">
               * Official acknowledgements provided for all funds. Eligible for 80G tax exemption.
             </p>
           </motion.div>
@@ -87,16 +99,16 @@ const DonateSection = () => {
       {/* ========================= QR + DONATION FORM ========================= */}
       <div className="max-w-7xl mx-auto px-6 lg:px-10 mb-32 relative z-10">
         <div className="bg-white rounded-[3rem] shadow-[0_8px_40px_rgb(0,0,0,0.06)] border border-[#EDE4CE] overflow-hidden flex flex-col md:flex-row">
-          
+
           {/* Left: QR Code Block */}
           <div className="flex-1 p-10 lg:p-16 bg-[#FDF8F0] border-r border-[#EDE4CE] flex flex-col items-center justify-center text-center">
             <h3 className="text-3xl font-bold text-[#2D5A3D] mb-4">Scan & Donate</h3>
             <p className="text-[#4B5E53] mb-10 max-w-sm">Use any UPI app like Google Pay, PhonePe, or Paytm to make an instant impact.</p>
-            
+
             <motion.div whileHover={{ scale: 1.05 }} className="bg-white p-6 rounded-3xl shadow-lg border border-[#EDE4CE] mb-8">
               <img src="/qr.jpg" alt="UPI QR Code" className="w-56 h-56 rounded-2xl" />
             </motion.div>
-            
+
             <div className="px-6 py-3 rounded-xl bg-white shadow-sm border border-[#EDE4CE] text-[#2D5A3D] font-mono font-bold text-lg inline-flex items-center gap-3">
               <QrCode className="text-[#C9A84C]" />
               focusinternational@sbi
@@ -106,14 +118,14 @@ const DonateSection = () => {
           {/* Right: Quick Donate Form */}
           <div className="flex-1 p-10 lg:p-16 flex flex-col justify-center">
             <h3 className="text-3xl font-bold text-[#2D5A3D] mb-8">Quick Pledge</h3>
-            
+
             <div className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
                 <input type="text" placeholder="First Name" className="w-full px-5 py-4 rounded-2xl bg-[#FDF8F0] border border-[#EDE4CE] focus:border-[#C9A84C] focus:ring-2 focus:ring-[#C9A84C]/20 outline-none transition-all text-[#2D5A3D] font-medium placeholder-[#7A8F81]" />
                 <input type="text" placeholder="Last Name" className="w-full px-5 py-4 rounded-2xl bg-[#FDF8F0] border border-[#EDE4CE] focus:border-[#C9A84C] focus:ring-2 focus:ring-[#C9A84C]/20 outline-none transition-all text-[#2D5A3D] font-medium placeholder-[#7A8F81]" />
               </div>
               <input type="email" placeholder="Email Address" className="w-full px-5 py-4 rounded-2xl bg-[#FDF8F0] border border-[#EDE4CE] focus:border-[#C9A84C] focus:ring-2 focus:ring-[#C9A84C]/20 outline-none transition-all text-[#2D5A3D] font-medium placeholder-[#7A8F81]" />
-              
+
               {/* <div className="pt-4 pb-2 border-t border-[#EDE4CE]">
                 <p className="text-sm font-bold uppercase text-[#C9A84C] tracking-wider mb-4">Select Amount (₹)</p>
                 <div className="flex flex-wrap gap-3">
@@ -165,7 +177,7 @@ const DonateSection = () => {
                 You are giving a family a future.
               </div>
             </div>
-            
+
             <div className="flex-1 w-full max-w-sm">
               <img src="/people-holding-rubber-heart.jpg" alt="Impact" className="w-full rounded-[2rem] shadow-2xl border-4 border-white/10 rotate-3 hover:rotate-0 transition-transform duration-500" />
             </div>

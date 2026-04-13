@@ -12,7 +12,7 @@ const InspirationSection = () => {
         {/* HERO IMAGE */}
         <div className="w-full">
           <img
-            src="/hero.png"
+            src="/He.png"
             alt="Happy Children — Focus International Foundation"
             className="w-full h-auto object-cover"
           />

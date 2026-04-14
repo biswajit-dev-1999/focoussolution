@@ -9,7 +9,7 @@ const stories = [
   },
   {
     name: "Niroj",
-    story: "Orphan helped and now Business.",
+    story: "We once supported a young boy in his time of need. Today, he has grown into a successful businessman, proving that hope, guidance, and opportunity can change a life forever.",
     img: "/arjun.JPG",
   },
   {

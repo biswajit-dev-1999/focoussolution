@@ -117,7 +117,7 @@ const BoardOfTrusteesSection = () => {
 
           <div className="space-y-6 text-lg md:text-xl leading-relaxed text-[#4B5E53]">
             <p>
-              Focus International Foundation, our purpose is deeply rooted in service, dignity, and compassion.
+              Focus International Foundation, purpose deeply rooted service, dignity, and compassion.
               We believe that every single act of kindness creates a powerful ripple effect, extending far beyond the immediate moment to touch thousands of lives.
             </p>
             <p className="font-medium text-[#2D5A3D]">

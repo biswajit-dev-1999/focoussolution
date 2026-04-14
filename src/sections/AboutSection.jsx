@@ -226,7 +226,7 @@ const AboutSection = () => {
           >
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden shadow-md mb-4 flex items-center justify-center text-4xl"
               style={{ background: "#FDF5E0", border: "3px solid #C9A84C", color: "#C9A84C" }}>
-              <img src="/Gemini_Generated_Image_t5yv5dt5yv5dt5yv.png" alt="" />
+              <img src="/Gemini_Generated_Image_vwnc1xvwnc1xvwnc.png" alt="" />
             </div>
             <h3 className="text-xl font-bold" style={{ color: "#2D5A3D" }}>
               Mr. Pradeep Kumar Mukherjee
@@ -331,7 +331,7 @@ const AboutSection = () => {
                 <span className="font-bold border-b-2" style={{ color: "#C9A84C", borderColor: "#C9A84C" }}>TEARS OF JOY</span>."
               </p>
               <p className="text-lg leading-relaxed mb-10 font-medium" style={{ color: "#4B5E53" }}>
-                Keeping the above into consideration you may kindly consider extending support to FOCUS SOLUTIONS so as to enable us as a wide service provider, operating in sincerity and professionalism.
+                Keeping the above into consideration you may kindly consider extending support to FOCUS INTERNATIONAL FOUNDATION so as to enable us as a wide service provider, operating in sincerity and professionalism.
               </p>
               <div className="inline-flex flex-col items-center">
                 <div className="w-16 h-1 rounded-full mb-5" style={{ background: "#2D5A3D" }} />

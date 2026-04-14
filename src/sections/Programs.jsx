@@ -17,7 +17,7 @@ export default function Programs() {
       icon: <Lightbulb size={80} strokeWidth={1.5} />,
       title: "Awareness",
       desc: "Child abuse, Breast feeding, Child care, Health, Kitchen garden, Sanitation and hygiene, Youth & Women empowerment, Career counseling, Road safety, Food safety training and certification (Fos TaC), QCI Industrial certification and training, Legal, Domestic Violence.",
-      img: "/football.JPG",
+      img: "/awa.jpg",
       colorA: "#C9A84C",
       colorB: "#E8C96A",
     },
